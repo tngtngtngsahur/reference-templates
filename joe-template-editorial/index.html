@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Joe Journal — a paper about a regular guy</title>
+  <meta name="description" content="$JOE memecoin template, editorial edition — swap the placeholder assets, links, and contract address for your own." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23faf7f0'/%3E%3Ccircle cx='50' cy='50' r='36' fill='%23f0b27a'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- fixed section index -->
+  <nav class="side-index" id="side-index" aria-label="Section index">
+    <a href="#legend" data-spy="legend">01</a>
+    <a href="#receipts" data-spy="receipts">02</a>
+    <a href="#numbers" data-spy="numbers">03</a>
+    <a href="#timeline" data-spy="timeline">04</a>
+    <a href="#acquire" data-spy="acquire">05</a>
+    <a href="#letters" data-spy="letters">06</a>
+  </nav>
+
+  <!-- ============ MASTHEAD ============ -->
+  <header class="masthead">
+    <div class="masthead-meta">
+      <span>Vol. 1 — No. 420</span>
+      <span class="masthead-brand">The Joe Journal</span>
+      <span id="today-date">—</span>
+    </div>
+    <div class="masthead-row">
+      <a class="wordmark" href="#top">$JOE</a>
+      <nav class="masthead-nav" aria-label="Main actions">
+        <!-- TEMPLATE: replace # with your swap / X / chart / community links -->
+        <a href="#" target="_blank" rel="noopener">Official X</a>
+        <a href="#numbers">The Numbers</a>
+        <a href="#" target="_blank" rel="noopener">Community</a>
+        <a class="nav-buy" href="#" target="_blank" rel="noopener">Buy $JOE</a>
+      </nav>
+    </div>
+    <p class="masthead-tag">A paper of record for the internet's favorite regular guy · Printed on Placeholder Chain · Price: one (1) vibe</p>
+  </header>
+
+  <main>
+
+    <!-- ============ FRONT PAGE / HERO ============ -->
+    <section class="hero section-reveal is-visible">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Breaking, since 2021</p>
+          <h1 class="hero-title">
+            <span class="reveal-line"><i>EVERYONE</i></span>
+            <span class="reveal-line"><i>KNOWS</i></span>
+            <span class="reveal-line"><i class="serif-italic">Joe.</i></span>
+          </h1>
+          <p class="hero-standfirst">
+            The meme was here first — the token just showed up. An unhurried
+            gentleman, a green chart, and a community that predates the ticker.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-ink" href="#" target="_blank" rel="noopener">Buy $JOE</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">Read the X feed</a>
+            <a class="btn" href="#numbers">Market section →</a>
+          </div>
+        </div>
+        <figure class="hero-portrait">
+          <div class="portrait-frame">
+            <!-- TEMPLATE: swap this inline SVG for your own mascot image -->
+            <svg viewBox="0 0 300 340" aria-hidden="true">
+              <rect width="300" height="340" fill="#ece5d6"/>
+              <ellipse cx="150" cy="330" rx="110" ry="12" fill="rgba(20,18,14,0.14)"/>
+              <path d="M78 340 Q70 250 96 224 L204 224 Q230 250 222 340 Z" fill="#1c3a2c"/>
+              <path d="M138 238 L150 330 L162 238 Z" fill="#faf7f0"/>
+              <path d="M144 240 L156 240 L164 262 L150 252 L136 262 Z" fill="#0b9d52"/>
+              <circle cx="150" cy="140" r="86" fill="#f0b27a"/>
+              <path d="M66 128 Q72 54 150 50 Q228 54 234 128 Q222 80 150 80 Q78 80 66 128 Z" fill="#3a2a1c"/>
+              <path d="M88 120 q14 -11 30 -3" fill="none" stroke="#3a2a1c" stroke-width="7" stroke-linecap="round"/>
+              <path d="M182 117 q14 -11 30 3" fill="none" stroke="#3a2a1c" stroke-width="7" stroke-linecap="round"/>
+              <circle cx="118" cy="146" r="9" fill="#14120e"/>
+              <circle cx="182" cy="146" r="9" fill="#14120e"/>
+              <path d="M112 196 Q150 226 188 196" fill="none" stroke="#14120e" stroke-width="9" stroke-linecap="round"/>
+              <circle cx="144" cy="172" r="6" fill="#d99559"/>
+            </svg>
+            <span class="stamp" aria-hidden="true">100%<br />ORGANIC<br />MEME</span>
+          </div>
+          <figcaption>Fig. 1 — J. Regular, photographed moments before going on-chain.</figcaption>
+        </figure>
+      </div>
+
+      <div class="contract-row">
+        <span class="contract-label">Contract of record</span>
+        <!-- TEMPLATE: replace with your contract address -->
+        <code class="contract-address" id="contract-address">0x0000000000000000000000000000000000000000</code>
+        <button class="btn btn-copy" id="copy-btn" type="button">Copy</button>
+      </div>
+    </section>
+
+    <div class="rule-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>$JOE · everyone knows joe · zero tax · one billion supply · the regular guy index · </span><span>$JOE · everyone knows joe · zero tax · one billion supply · the regular guy index · </span>
+      </div>
+    </div>
+
+    <!-- ============ 01 THE LEGEND ============ -->
+    <section class="article section-reveal" id="legend">
+      <header class="article-head">
+        <span class="article-no">01</span>
+        <h2 class="article-title">The Legend</h2>
+        <span class="article-byline">Opinion · The Editors</span>
+      </header>
+      <div class="article-cols">
+        <p class="dropcap">
+          Somewhere between the group chats and the quote tweets, a man became a
+          unit of culture. Joe never asked for this. He tilted his head once in
+          2021 and the internet did the rest — the screenshots, the edits, the
+          conference cameos. By the time a token appeared, the work was already
+          done.
+        </p>
+        <p>
+          That is the entire thesis. Most coins spend millions manufacturing a
+          meme; $JOE simply filed the paperwork on one that already existed. No
+          roadmap theater, no utility cosplay — a fixed supply, an empty tax
+          line, and a fellow everybody recognizes.
+        </p>
+        <blockquote class="pullquote">
+          “Most coins manufacture a meme. This one just filed the paperwork.”
+        </blockquote>
+        <p>
+          Analysts (three guys in a Telegram) describe the asset as
+          “fundamentally regular.” We are inclined to agree, and we note for the
+          record that the chart, at press time, was green.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 02 RECEIPTS ============ -->
+    <section class="article section-reveal" id="receipts">
+      <header class="article-head">
+        <span class="article-no">02</span>
+        <h2 class="article-title">The Receipts</h2>
+        <span class="article-byline">Archive · Verified sightings</span>
+      </header>
+      <p class="article-lede">Clippings from the public record. The meme predates the ticker — here is the paper trail.</p>
+      <div class="clippings">
+        <!-- TEMPLATE: swap these placeholder clippings for real embedded posts -->
+        <a class="clipping tilt-l" href="#" target="_blank" rel="noopener">
+          <div class="clipping-media">
+            <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-label="Placeholder still: Joe photobombing in a park">
+              <rect width="320" height="200" fill="#c9d4cf"/>
+              <rect y="130" width="320" height="70" fill="#9db3a4"/>
+              <circle cx="240" cy="80" r="34" fill="#5f7a63"/>
+              <circle cx="286" cy="66" r="26" fill="#6c8a70"/>
+              <circle cx="86" cy="146" r="66" fill="#f0b27a"/>
+              <path d="M22 136 Q28 78 86 76 Q144 78 150 136 Q136 96 86 96 Q36 96 22 136Z" fill="#3a2a1c"/>
+              <circle cx="62" cy="142" r="6" fill="#14120e"/>
+              <circle cx="112" cy="142" r="6" fill="#14120e"/>
+              <path d="M58 170 Q86 190 114 170" fill="none" stroke="#14120e" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="clipping-caption">“Photobomb in the park.” — @founderguy, Apr 13 2021 · 1.2K likes</p>
+        </a>
+        <a class="clipping tilt-r" href="#" target="_blank" rel="noopener">
+          <div class="clipping-media">
+            <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-label="Placeholder still: Joe tilting his head on a plain wall">
+              <rect width="320" height="200" fill="#d9d2c4"/>
+              <g transform="rotate(-10 160 120)">
+                <circle cx="160" cy="126" r="72" fill="#f0b27a"/>
+                <path d="M88 116 Q96 54 160 52 Q224 54 232 116 Q218 70 160 70 Q102 70 88 116Z" fill="#3a2a1c"/>
+                <circle cx="134" cy="122" r="7" fill="#14120e"/>
+                <circle cx="186" cy="122" r="7" fill="#14120e"/>
+                <path d="M130 156 Q160 176 190 156" fill="none" stroke="#14120e" stroke-width="6" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <p class="clipping-caption">“When the meme becomes culturally relevant…” — Mar 30 2021</p>
+        </a>
+        <a class="clipping tilt-l2" href="#" target="_blank" rel="noopener">
+          <div class="clipping-media">
+            <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-label="Placeholder still: pixel flames behind grayscale Joe">
+              <rect width="320" height="200" fill="#8c1f0e"/>
+              <polygon points="120,200 160,90 185,160 220,60 245,160 272,110 300,200" fill="#e6541f"/>
+              <polygon points="160,200 195,130 220,180 250,120 280,200" fill="#f6a11c"/>
+              <circle cx="76" cy="128" r="62" fill="#c9c3bb"/>
+              <path d="M18 118 Q26 66 76 64 Q126 66 134 118 Q120 80 76 80 Q32 80 18 118Z" fill="#57504a"/>
+              <circle cx="54" cy="124" r="6" fill="#2c2825"/>
+              <circle cx="98" cy="124" r="6" fill="#2c2825"/>
+              <path d="M52 152 Q76 168 100 152" fill="none" stroke="#2c2825" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="clipping-caption">Main stage, 12:20pm CT. “Bring vibes.” — @placeholderapp, Apr 26 2023 · 44.6K views</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 03 THE NUMBERS ============ -->
+    <section class="article section-reveal" id="numbers">
+      <header class="article-head">
+        <span class="article-no">03</span>
+        <h2 class="article-title">The Numbers</h2>
+        <span class="article-byline">Markets desk · <span class="live-flag">live</span></span>
+      </header>
+      <div class="numbers-grid">
+        <div class="ledger">
+          <!-- TEMPLATE: wire these up to your market data API -->
+          <div class="ledger-row big">
+            <span>Price (JOE/USD)</span>
+            <span class="mono">$<span data-count="0.000651" data-decimals="6">0</span> <em class="up">+110.00%</em></span>
+          </div>
+          <div class="ledger-row"><span>Market capitalisation</span><span class="mono">$<span data-count="594.56" data-decimals="2">0</span>K</span></div>
+          <div class="ledger-row"><span>Liquidity</span><span class="mono">$<span data-count="80.01" data-decimals="2">0</span>K</span></div>
+          <div class="ledger-row"><span>Volume, 24h</span><span class="mono">$<span data-count="248.54" data-decimals="2">0</span>K</span></div>
+          <div class="ledger-row"><span>Trades, 24h</span><span class="mono"><span data-count="1190">0</span></span></div>
+          <div class="ledger-row"><span>Holders of record</span><span class="mono"><span data-count="1377">0</span></span></div>
+          <div class="ledger-row"><span>Buy / sell tax</span><span class="mono">0% / 0%</span></div>
+          <div class="ledger-row"><span>Total supply</span><span class="mono">1,000,000,000 (fixed)</span></div>
+        </div>
+        <figure class="index-chart">
+          <figcaption class="chart-caption">The Regular Guy Index, indexed to 100</figcaption>
+          <!-- TEMPLATE: replace with your chart embed, e.g. a Dexscreener iframe -->
+          <svg viewBox="0 0 460 300" preserveAspectRatio="none" aria-label="Placeholder line chart trending up">
+            <rect width="460" height="300" fill="#faf7f0"/>
+            <g stroke="rgba(20,18,14,0.12)" stroke-width="1">
+              <path d="M0 60 H460 M0 120 H460 M0 180 H460 M0 240 H460"/>
+            </g>
+            <polyline points="0,258 40,250 80,254 120,222 160,232 200,196 240,208 280,162 320,176 360,120 400,134 460,66"
+              fill="none" stroke="#14120e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+            <circle cx="460" cy="66" r="5" fill="#0b9d52"/>
+          </svg>
+          <p class="chart-footnote">Source: the vibes. Past regularity is no guarantee of future regularity.</p>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 04 TIMELINE ============ -->
+    <section class="article section-reveal" id="timeline">
+      <header class="article-head">
+        <span class="article-no">04</span>
+        <h2 class="article-title">A Brief History</h2>
+        <span class="article-byline">Chronology</span>
+      </header>
+      <ol class="timeline">
+        <li class="tl-item">
+          <span class="tl-date">Mar 2021</span>
+          <div class="tl-body"><h3>The head tilt</h3><p>Joe tilts his head against a plain wall. The internet takes note. Nothing is ever the same.</p></div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-date">Apr 2021</span>
+          <div class="tl-body"><h3>The park photobomb</h3><p>A casual stroll enters the permanent record. Screenshot folders across the world grow heavier.</p></div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-date">Apr 2023</span>
+          <div class="tl-body"><h3>Main stage</h3><p>Joe appears at a real conference, at a real podium, at 12:20pm CT. Vibes are brought as instructed.</p></div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-date">Now</span>
+          <div class="tl-body"><h3>The ticker</h3><p>The meme gets a contract address. The community it already had gets a chart to watch together.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ 05 HOW TO ACQUIRE ============ -->
+    <section class="article section-reveal" id="acquire">
+      <header class="article-head">
+        <span class="article-no">05</span>
+        <h2 class="article-title">How to Acquire</h2>
+        <span class="article-byline">Practical notes</span>
+      </header>
+      <div class="acquire-grid">
+        <article class="acquire-step">
+          <span class="acquire-no">i.</span>
+          <h3>Obtain a wallet</h3>
+          <p>Any self-custody wallet that supports Placeholder Chain. Write the seed phrase on paper, like a gentleman.</p>
+        </article>
+        <article class="acquire-step">
+          <span class="acquire-no">ii.</span>
+          <h3>Fund it with gas</h3>
+          <p>Move the chain's native token from your exchange of choice. A modest sum; Joe is not greedy.</p>
+        </article>
+        <article class="acquire-step">
+          <span class="acquire-no">iii.</span>
+          <h3>Swap for $JOE</h3>
+          <p>Paste the contract of record — printed above the fold — into your DEX. Verify every character. Trust no DM.</p>
+        </article>
+        <article class="acquire-step">
+          <span class="acquire-no">iv.</span>
+          <h3>Hold, regularly</h3>
+          <p>Congratulations. You now hold the regular guy. Conduct yourself accordingly.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 06 LETTERS ============ -->
+    <section class="article section-reveal" id="letters">
+      <header class="article-head">
+        <span class="article-no">06</span>
+        <h2 class="article-title">Letters to the Editor</h2>
+        <span class="article-byline">Correspondence · FAQ</span>
+      </header>
+      <details class="letter">
+        <summary>Sir — what exactly is $JOE?</summary>
+        <p>A memecoin for a meme that already existed. One billion fixed supply, zero tax, and a mascot the timeline recognizes on sight. — Ed.</p>
+      </details>
+      <details class="letter">
+        <summary>Sir — is the contract safe?</summary>
+        <p>Template answer: print your audit, renounce, and LP-lock facts here with links. This paper does not publish claims without a transaction hash. — Ed.</p>
+      </details>
+      <details class="letter">
+        <summary>Sir — where does one buy?</summary>
+        <p>See section 05, "How to Acquire." The only official links are in the masthead. Anyone else sliding into your correspondence is not Joe. — Ed.</p>
+      </details>
+      <details class="letter">
+        <summary>Sir — when utility?</summary>
+        <p>Joe is the utility. — Ed.</p>
+      </details>
+    </section>
+
+    <!-- ============ FINAL ============ -->
+    <section class="closer section-reveal">
+      <p class="kicker">Final edition, every edition</p>
+      <h2 class="closer-title"><i>Everyone knows Joe.</i><br />Now the chain does too.</h2>
+      <div class="hero-actions center">
+        <a class="btn btn-ink" href="#" target="_blank" rel="noopener">Buy $JOE</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">Join the community</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <span class="footer-word" aria-hidden="true">JOE</span>
+    <div class="footer-meta">
+      <span>© The Joe Journal · $JOE on Placeholder Chain</span>
+      <span>0x0000…0000</span>
+      <span>Not financial advice. Barely advice at all.</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status">Copied to clipboard</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOE — the regular guy goes orbital</title>
+  <meta name="description" content="$JOE memecoin template, aurora edition — swap the placeholder assets, links, and contract address for your own." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2306070f'/%3E%3Ccircle cx='50' cy='50' r='32' fill='%2300e66b'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- animated backdrop -->
+  <div class="aurora" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+  <canvas class="stars" id="stars" aria-hidden="true"></canvas>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-coin">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="48" fill="url(#coin-grad-sm)"/>
+          <defs>
+            <linearGradient id="coin-grad-sm" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#00e66b"/>
+              <stop offset="1" stop-color="#0b9d52"/>
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="54" r="27" fill="#f0b27a"/>
+          <path d="M25 48 Q29 24 50 26 Q71 24 75 48 Q69 34 50 34 Q31 34 25 48Z" fill="#3a2a1c"/>
+          <circle cx="41" cy="52" r="3.4" fill="#06070f"/>
+          <circle cx="59" cy="52" r="3.4" fill="#06070f"/>
+          <path d="M40 64 Q50 72 60 64" fill="none" stroke="#06070f" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">JOE</span>
+    </a>
+    <nav class="header-nav" aria-label="Sections">
+      <a href="#stats">Stats</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#how">How to buy</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <!-- TEMPLATE: replace # with your swap link -->
+    <a class="btn btn-glow btn-small" href="#" target="_blank" rel="noopener">Buy $JOE</a>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero section-reveal is-visible">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="chip"><i class="chip-dot"></i> Live on Placeholder Chain</span>
+          <h1 class="hero-title">Meet <span class="grad-text">Joe.</span><br />The regular guy<br />gone orbital.</h1>
+          <p class="hero-sub">
+            The internet's favorite regular guy, now living rent-free on-chain.
+            Zero tax, fixed supply, and a community that predates the ticker.
+          </p>
+          <div class="hero-actions">
+            <!-- TEMPLATE: replace # with your swap / X / community links -->
+            <a class="btn btn-glow" href="#" target="_blank" rel="noopener">Buy $JOE →</a>
+            <a class="btn btn-glass" href="#" target="_blank" rel="noopener">Official X</a>
+            <a class="btn btn-glass" href="#" target="_blank" rel="noopener">Community</a>
+          </div>
+          <div class="contract-pill">
+            <span class="contract-label">CA</span>
+            <!-- TEMPLATE: replace with your contract address -->
+            <code class="contract-address" id="contract-address">0x0000000000000000000000000000000000000000</code>
+            <button class="copy-btn" id="copy-btn" type="button" aria-label="Copy contract address">
+              <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M9 9h10v12H9zM5 3h10v4M5 3v12h4"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="coin-tilt" id="coin-tilt">
+            <div class="coin">
+              <!-- TEMPLATE: swap this inline SVG for your own mascot / coin art -->
+              <svg viewBox="0 0 300 300" aria-hidden="true">
+                <defs>
+                  <linearGradient id="coin-grad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#00e66b"/>
+                    <stop offset="0.55" stop-color="#0b9d52"/>
+                    <stop offset="1" stop-color="#065c30"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="150" cy="150" r="146" fill="url(#coin-grad)"/>
+                <circle cx="150" cy="150" r="132" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="3" stroke-dasharray="4 10"/>
+                <circle cx="150" cy="162" r="76" fill="#f0b27a"/>
+                <path d="M80 148 Q88 78 150 76 Q212 78 220 148 Q206 104 150 104 Q94 104 80 148Z" fill="#3a2a1c"/>
+                <path d="M104 132 q12 -9 26 -2" fill="none" stroke="#3a2a1c" stroke-width="6" stroke-linecap="round"/>
+                <path d="M170 130 q12 -9 26 2" fill="none" stroke="#3a2a1c" stroke-width="6" stroke-linecap="round"/>
+                <circle cx="122" cy="158" r="8" fill="#06070f"/>
+                <circle cx="178" cy="158" r="8" fill="#06070f"/>
+                <path d="M116 200 Q150 226 184 200" fill="none" stroke="#06070f" stroke-width="8" stroke-linecap="round"/>
+                <path d="M60 244 a 118 118 0 0 0 180 0" fill="none" stroke="rgba(6,7,15,0.25)" stroke-width="10" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="orbit-chip oc-1">0/0 TAX</span>
+            <span class="orbit-chip oc-2">1B SUPPLY</span>
+            <span class="orbit-chip oc-3">LP LOCKED</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section section-reveal" id="stats">
+      <div class="section-head">
+        <span class="chip">Market</span>
+        <h2 class="section-title">Numbers that <span class="grad-text">go up.</span></h2>
+      </div>
+      <div class="stat-grid">
+        <!-- TEMPLATE: wire these up to your market data API -->
+        <article class="glass stat-card">
+          <span class="stat-label">Price</span>
+          <span class="stat-value">$<span data-count="0.000651" data-decimals="6">0</span></span>
+          <span class="stat-delta">▲ +110.00% (24h)</span>
+        </article>
+        <article class="glass stat-card">
+          <span class="stat-label">Market cap</span>
+          <span class="stat-value">$<span data-count="594.56" data-decimals="2">0</span>K</span>
+          <span class="stat-delta">and climbing</span>
+        </article>
+        <article class="glass stat-card">
+          <span class="stat-label">24h volume</span>
+          <span class="stat-value">$<span data-count="248.54" data-decimals="2">0</span>K</span>
+          <span class="stat-delta"><span data-count="1190">0</span> trades</span>
+        </article>
+        <article class="glass stat-card">
+          <span class="stat-label">Holders</span>
+          <span class="stat-value"><span data-count="1377">0</span></span>
+          <span class="stat-delta">regular guys &amp; counting</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ TOKENOMICS ============ -->
+    <section class="section section-reveal" id="tokenomics">
+      <div class="section-head">
+        <span class="chip">Tokenomics</span>
+        <h2 class="section-title">Simple on <span class="grad-text">purpose.</span></h2>
+      </div>
+      <div class="tok-grid">
+        <div class="glass donut-card">
+          <svg class="donut" viewBox="0 0 200 200" role="img" aria-label="Token allocation: 100% liquidity pool">
+            <circle cx="100" cy="100" r="78" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="26"/>
+            <circle class="donut-seg" id="donut-seg" cx="100" cy="100" r="78" fill="none"
+              stroke="url(#donut-grad)" stroke-width="26" stroke-linecap="round"
+              stroke-dasharray="0 490" transform="rotate(-90 100 100)"/>
+            <defs>
+              <linearGradient id="donut-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#00e66b"/>
+                <stop offset="1" stop-color="#38d9f5"/>
+              </linearGradient>
+            </defs>
+            <text x="100" y="94" text-anchor="middle" class="donut-big">100%</text>
+            <text x="100" y="118" text-anchor="middle" class="donut-small">LIQUIDITY</text>
+          </svg>
+        </div>
+        <div class="tok-list">
+          <div class="glass tok-item">
+            <span class="tok-dot d-green"></span>
+            <div><h3>100% liquidity pool</h3><p>Every token paired at launch. No hidden wallets waiting to rain on the chart.</p></div>
+          </div>
+          <div class="glass tok-item">
+            <span class="tok-dot d-blue"></span>
+            <div><h3>0% team allocation</h3><p>Joe is a regular guy. Regular guys don't pre-mine.</p></div>
+          </div>
+          <div class="glass tok-item">
+            <span class="tok-dot d-purple"></span>
+            <div><h3>0/0 buy &amp; sell tax</h3><p>What you trade is what you get. The contract takes nothing off the top.</p></div>
+          </div>
+          <div class="glass tok-item">
+            <span class="tok-dot d-amber"></span>
+            <div><h3>1B fixed supply</h3><p>Minting revoked. One billion Joes, not one more.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO BUY ============ -->
+    <section class="section section-reveal" id="how">
+      <div class="section-head">
+        <span class="chip">Guide</span>
+        <h2 class="section-title">Three steps to <span class="grad-text">regular.</span></h2>
+      </div>
+      <div class="how-grid">
+        <article class="glass how-card">
+          <span class="how-no">1</span>
+          <h3>Get a wallet</h3>
+          <p>Install any wallet that supports Placeholder Chain and keep your seed phrase somewhere only you can find it.</p>
+        </article>
+        <span class="how-connector" aria-hidden="true"></span>
+        <article class="glass how-card">
+          <span class="how-no">2</span>
+          <h3>Fund with gas</h3>
+          <p>Send the chain's native token from your exchange or bridge of choice. Enough for the swap plus fees.</p>
+        </article>
+        <span class="how-connector" aria-hidden="true"></span>
+        <article class="glass how-card">
+          <span class="how-no">3</span>
+          <h3>Swap for $JOE</h3>
+          <p>Paste the contract address from above into your DEX, verify every character, and welcome aboard.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ROADMAP ============ -->
+    <section class="section section-reveal" id="roadmap">
+      <div class="section-head">
+        <span class="chip">Roadmap</span>
+        <h2 class="section-title">The plan is <span class="grad-text">the vibe.</span></h2>
+      </div>
+      <div class="road-grid">
+        <article class="glass road-card">
+          <div class="road-head"><span class="road-phase">Phase 1</span><span class="road-status done">Complete</span></div>
+          <h3>Exist</h3>
+          <ul>
+            <li>Be a meme since 2021</li>
+            <li>Launch token, lock LP</li>
+            <li>Assemble the group chat</li>
+          </ul>
+          <div class="road-bar"><span data-progress="100"></span></div>
+        </article>
+        <article class="glass road-card">
+          <div class="road-head"><span class="road-phase">Phase 2</span><span class="road-status live">In progress</span></div>
+          <h3>Persist</h3>
+          <ul>
+            <li>Listings &amp; trackers</li>
+            <li>Meme production at scale</li>
+            <li>Community takeovers</li>
+          </ul>
+          <div class="road-bar"><span data-progress="55"></span></div>
+        </article>
+        <article class="glass road-card">
+          <div class="road-head"><span class="road-phase">Phase 3</span><span class="road-status">Soon</span></div>
+          <h3>Transcend</h3>
+          <ul>
+            <li>Joe everywhere</li>
+            <li>IRL sightings multiply</li>
+            <li>The chart speaks for itself</li>
+          </ul>
+          <div class="road-bar"><span data-progress="10"></span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ COMMUNITY RECEIPTS ============ -->
+    <section class="section section-reveal" id="community">
+      <div class="section-head">
+        <span class="chip">Receipts</span>
+        <h2 class="section-title">The meme was <span class="grad-text">here first.</span></h2>
+        <div class="carousel-nav">
+          <button class="car-btn" id="car-prev" type="button" aria-label="Previous">←</button>
+          <button class="car-btn" id="car-next" type="button" aria-label="Next">→</button>
+        </div>
+      </div>
+      <div class="carousel" id="carousel">
+        <!-- TEMPLATE: swap these placeholder cards for real embedded posts -->
+        <a class="glass car-card" href="#" target="_blank" rel="noopener">
+          <div class="car-head"><span class="car-avatar av-1"></span><div><b>Founder Guy</b><span>@founderguy · Apr 2021</span></div></div>
+          <p>Joe photobombing in the park. 1.2K likes before the token even existed. The people's mascot.</p>
+          <span class="car-link">View post ↗</span>
+        </a>
+        <a class="glass car-card" href="#" target="_blank" rel="noopener">
+          <div class="car-head"><span class="car-avatar av-2"></span><div><b>Founder Guy</b><span>@founderguy · Mar 2021</span></div></div>
+          <p>"When the meme becomes culturally relevant…" — the head tilt that started it all.</p>
+          <span class="car-link">View post ↗</span>
+        </a>
+        <a class="glass car-card" href="#" target="_blank" rel="noopener">
+          <div class="car-head"><span class="car-avatar av-3"></span><div><b>Placeholder App</b><span>@placeholderapp · Apr 2023</span></div></div>
+          <p>"Our guy Joe will be on the main stage tomorrow at 12:20pm CT. Bring vibes." 44.6K views.</p>
+          <span class="car-link">View post ↗</span>
+        </a>
+        <a class="glass car-card" href="#" target="_blank" rel="noopener">
+          <div class="car-head"><span class="car-avatar av-4"></span><div><b>Ecosystem Lead</b><span>@ecosystemlead · 2023</span></div></div>
+          <p>Conference cameo confirmed. Grayscale Joe, pixel flames, main character energy.</p>
+          <span class="car-link">View post ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-reveal" id="faq">
+      <div class="section-head">
+        <span class="chip">FAQ</span>
+        <h2 class="section-title">Regular <span class="grad-text">questions.</span></h2>
+      </div>
+      <div class="faq-list">
+        <div class="glass faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">What is $JOE?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>A memecoin for the internet's favorite regular guy. No roadmap theater, no utility cosplay — a meme, a chart, and a community that already existed.</p></div>
+        </div>
+        <div class="glass faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Is the contract safe?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Template answer: state your audit, renounce, and LP-lock facts here with links. Never make claims you can't back with a transaction hash.</p></div>
+        </div>
+        <div class="glass faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Where do I buy?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Follow the three steps above. The only official links live in the header of this site — anything DMing you is not Joe.</p></div>
+        </div>
+        <div class="glass faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Wen utility?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Joe is the utility.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="final section-reveal">
+      <div class="glass final-card">
+        <h2 class="final-title">Everyone knows Joe.<br /><span class="grad-text">Now the chain does too.</span></h2>
+        <div class="hero-actions center">
+          <a class="btn btn-glow" href="#" target="_blank" rel="noopener">Buy $JOE →</a>
+          <a class="btn btn-glass" href="#" target="_blank" rel="noopener">Join the community</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <span>$JOE · Placeholder Chain</span>
+    <span>0x0000…0000</span>
+    <span>Memecoin template. Not financial advice.</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status">Contract address copied</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
